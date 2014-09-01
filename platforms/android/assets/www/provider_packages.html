@@ -1,0 +1,34 @@
+<div data-role="page" id="packagesPage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer">
+      <div id="back-button" onclick="goBackTo('index.html');"></div>
+    </div>
+    <div id="page-title">Packages</div>
+    <div id="help-outer">
+      <div id="help-button" style="display: none;"></div>
+    </div>
+  </div>
+  <div class="page-content" id="page-content">
+    <div data-role="content" style="padding-top: 0px;">
+      <ul id="packageViewAdmin" data-role="listview" data-inset="true" data-count-theme="a"></ul>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li>
+          <a onclick="goTo('provider_profile.html',null,'fade')" data-icon="star">Profile</a>
+        </li>
+        <li>
+          <a data-icon="packages" class="ui-btn-active">Packages</a>
+        </li>
+        <li>
+          <a onclick="goTo('provider_checkin_current.html',null,'fade');" data-icon="check">Track</a>
+        </li>
+        <li>
+          <a onclick="goTo('provider_promote.html',null,'fade')" data-icon="recommend">Connect</a>
+        </li>
+      </ul>   
+    </div>
+  </div>
+</div>

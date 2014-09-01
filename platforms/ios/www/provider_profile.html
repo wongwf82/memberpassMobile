@@ -1,0 +1,35 @@
+<div data-role="page" id="providerProfilePage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer">
+      <div id="back-button" onclick="goBackTo('index.html');"></div>
+    </div>
+    <div id="page-title">Profile</div>
+    <div id="help-outer">
+      <div id="help-button" style="display: none;"></div>
+    </div>
+  </div>
+  <div class="page-content" id="page-content">
+    <div data-role="content" style="padding-top: 0px;">
+      <ul id="sellerViewAdmin" class="listView" data-role="listview" data-inset="true"></ul>
+      <ul id="sellerMoreViewAdmin" class="listView" data-role="listview" data-inset="true"></ul>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li>
+          <a data-icon="star" class="ui-btn-active">Profile</a>
+        </li>
+        <li>
+          <a onclick="goTo('provider_packages.html',null,'fade');" data-icon="packages">Packages</a>
+        </li>
+        <li>
+          <a onclick="goTo('provider_checkin_current.html',null,'fade');" data-icon="check">Track</a>
+        </li>
+        <li>
+          <a onclick="goTo('provider_promote.html',null,'fade')" data-icon="recommend">Connect</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

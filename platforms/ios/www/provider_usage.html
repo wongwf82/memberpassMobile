@@ -1,0 +1,31 @@
+<div data-role="page" id="providerUsagePage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer">
+      <div id="back-button" onclick="goBackHistory();"></div>
+    </div>
+    <div id="page-title"></div>
+    <div id="help-outer">
+      <div id="help-button" style="display: none;"></div>
+    </div>
+  </div>
+  <div class="page-content" id="page-content">
+    <div data-role="content" style="padding-top: 0px;" class="ta-center">
+      <ul id="planView" data-role="listview" data-inset="true" data-count-theme="a"></ul>
+      <div id="orderStatusView"></div> 
+      <ul id="clientView" data-role="listview" data-inset="true"></ul>
+      <ul id="usageView" data-role="listview" data-inset="true"></ul>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+    <div data-role="navbar">
+      <ul data-count-theme="b" data-divider-theme="c">
+        <li>
+          <a data-icon="check" onclick="use();">Check in</a>
+        </li>
+        <li class="ui-badge-container">
+          <a data-icon="plus" onclick="gift();">Gift one</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

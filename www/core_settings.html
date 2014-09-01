@@ -1,0 +1,29 @@
+<div data-role="page" id="settingsPage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer">
+      <div id="back-button" onclick="goBackTo('index.html');"></div>
+    </div>
+    <div id="page-title">Settings</div>
+    <div id="help-outer"></div>
+  </div>
+  <div class="page-content" id="page-content">
+    <div data-role="content" style="padding-top: 0px;">
+      <ul data-role="listview" data-inset="true">
+        <li><a class="btn-more" onclick="goTo('edit_profile.html','core_settings.html');">Edit profile</a>
+        </li>
+        <li><a class="btn-more" onclick="goTo('core_about.html',null,'slideup');">About</a>
+        </li>
+        <li class="ta-center">
+          <form method="POST" id="registeras-form">
+            <select name="memberpass_plan" id="change-memberpass-plan" data-role="slider" data-theme="c" data-track-theme="a" onchange="updateRegisterAs();">
+              <option value="BASIC">Switch to Client</option>
+              <option value="client">Switch to Provider</option>
+            </select>
+          </form>
+        </li>
+      </ul>
+      <br/>
+      <a onclick="logout();" data-role="button" data-corners="false" data-theme="a">Log out</a> 
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div data-role="page" id="clientSellerPage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer">
+      <div id="back-button" onclick="goBackTo('client_find_seller.html');"></div>
+    </div>
+    <div id="page-title"></div>
+    <div id="help-outer">
+      <div id="help-button" style="display: none;"></div>
+    </div>
+  </div>
+  <div class="page-content" id="page-content">
+    <div data-role="content" style="padding-top: 0px;">
+      <ul id="sellerView" class="listView" data-role="listview" data-inset="true"></ul>
+      <ul id="packageView" data-role="listview" data-inset="true" data-count-theme="a"></ul>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a data-icon="star" class="ui-btn-active">Profile</a>
+        </li>
+        <li><a onclick="goTo('client_seller_more.html',null,'fade')" data-icon="info">More</a>
+        </li>
+        <li><a onclick="goTo('client_recommend.html','client_seller.html','slideup')" data-icon="recommend">Recommend</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

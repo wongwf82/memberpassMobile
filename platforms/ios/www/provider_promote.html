@@ -1,0 +1,38 @@
+<div data-role="page" id="providerPromotePage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer">
+      <div id="back-button" onclick="goBackTo('index.html');"></div>
+    </div>
+    <div id="page-title">Connect</div>
+    <div id="help-outer">
+      <div id="help-button" style="display: none;"></div>
+    </div>
+  </div>
+  <div class="page-content" id="page-content">
+    <p style="padding-left: 10px; padding-right: 10px;">
+      Invite your clients to download this app and start browsing your packages!
+    </p> 
+    <div data-role="content">      
+      <ul id="recommendView" data-role="listview"></ul>
+      <br/>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li>
+          <a onclick="goTo('provider_profile.html',null,'fade')" data-icon="star">Profile</a>
+        </li>        
+        <li>
+          <a onclick="goTo('provider_packages.html',null,'fade');" data-icon="packages">Packages</a>
+        </li>
+        <li>
+          <a onclick="goTo('provider_checkin_current.html',null,'fade');" data-icon="check">Track</a>
+        </li>
+        <li>
+          <a data-icon="recommend" class="ui-btn-active">Connect</a>
+        </li>
+      </ul>
+    </div>
+  </div>  
+</div>

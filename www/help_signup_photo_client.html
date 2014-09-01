@@ -1,0 +1,32 @@
+<div data-role="page" id="helpPage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer"></div>
+    <div id="page-title">Help - Client</div>
+    <div id="help-outer" onclick="goBackTo('signup_photo.html',null,'pop');">Done</div>
+  </div>
+  <div class="page-content" id="page-content">
+    <div data-role="content" style="padding-top: 0px;">
+      <div id='slider' class='swipe'>
+        <div class='swipe-wrap'>
+          <div>
+            <h3>Your profile picture</h3>
+            <img src="img/help/edit-photo-client-1.png" />
+            <p>
+              This helps your provider identify you when taking attendance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a class="ui-btn-active">I'm a Client</a>
+        </li>
+        <li><a onclick="goTo('help_signup_photo_provider.html',null,'fade');">I'm a Provider</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

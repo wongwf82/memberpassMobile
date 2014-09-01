@@ -1,0 +1,86 @@
+<div data-role="page" id="helpPage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer"></div>
+    <div id="page-title">Swipe left for more</div>
+    <div id="help-outer" onclick="goBackTo('index.html',null,'pop');">Done</div>
+  </div>
+  <div class="page-content" id="page-content">
+    <!-- The number of dots must be the same as the number of div slides -->
+    <li class="dots">
+      <label class="dot dot-normal"></label>
+      <label class="dot dot-normal"></label>
+      <label class="dot dot-normal"></label>
+      <label class="dot dot-normal"></label>
+      <label class="dot dot-normal"></label>
+      <label class="dot dot-normal"></label>
+      <label class="dot dot-normal"></label>
+    </li>
+    <div data-role="content" style="padding-top: 0px;">
+      <div id='slider' class='swipe'>
+        <div class='swipe-wrap'>
+          <div>
+            <h3>Client discovers you</h3>
+            <img src="img/help/edit-photo-provider-1.png" />
+            <p>It only takes <b>a few minutes</b> to set up!</p>
+          </div>
+          <div>
+            <h3>Get creative with packages</h3>
+            <img src="img/help/provider-packages-1.png" />
+            <p>Create <b>custom packages</b> and easily <b>track usage</b> when your clients make a selection.</p>
+          </div>
+          <div>
+            <h3>Offer free trial easily</h3>
+            <img src="img/help/provider-packages-2.png" />
+            <p>
+              <b>Create FREE packages</b> by setting the price to $1 or $0 when editing the description.
+              <br/>
+              <br/>Great way to <b>generate leads</b> and build your business.
+            </p>
+          </div>
+          <div>
+            <h3>Track session usage</h3>
+            <img src="img/help/provider-usage-1.png" />
+            <p>
+              If a client selected a 10 session package from you, click on <b>Check in</b> to reduce it to 9.
+              <br/>
+              <br/>At each session, use this feature to track your client's session usage.
+              <br/>
+              <br/>Click on <b>Gift one</b> to increase it back to 10!
+            </p>
+          </div>
+          <div>
+            <h3>Track payment status</h3>
+            <img src="img/help/provider-usage-2.png" />
+            <p>
+              When a client selects a package, it is first set to <b>Unpaid</b>.
+              <br/>
+              <br/>Change to <b>Paid</b> when you receive cash payment.
+              <br/>
+              <br/>When there are no sessions left in a package, the package will be moved to History.
+            </p>
+          </div>
+          <div>
+            <h3>SMS, Email and Facebook</h3>
+            <img src="img/help/sign-up-provider-1.png" />
+            <p>Invite your clients to download this app and start browsing your packages!</p>
+          </div>
+          <div>
+            <h3>Get recommended easily</h3>
+            <img src="img/help/sign-up-provider-2.png" />
+            <p>When your clients browse your profile and packages, they can recommend you to their friends by SMS, Email and Facbook too!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a onclick="goTo('tour_client.html',null,'fade');">I'm a Client</a>
+        </li>
+        <li><a class="ui-btn-active">I'm a Provider</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

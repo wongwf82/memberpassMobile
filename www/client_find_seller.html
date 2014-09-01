@@ -1,0 +1,42 @@
+<div data-role="page" id="clientFindSellerPage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer">
+      <div id="back-button" onclick="goBackTo('index.html');"></div>
+    </div>
+    <div id="page-title">Find a service provider</div>
+    <div id="help-outer">
+      <div id="help-button" style="display: none;"></div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div data-role="content">
+      <ul id="sellerList" data-role="listview" data-inset="false" data-corners="false" data-filter="true" data-filter-theme="d" data-filter-placeholder="Search">
+      </ul>
+      <div id="search" style="padding-top: 30%; text-align: center; color: #6f7477;">
+        <div style="padding-top: 30%; padding-bottom: 15%; background: transparent url('./img/search.png') center center no-repeat;">
+        </div>
+        <div>
+          <p>
+            Search for services, provider names and service areas.
+          </p>
+        </div>
+      </div>
+      <div id="search-none" style="padding-top: 30%; text-align: center; color: #6f7477; display: none;">
+        <div style="padding-top: 30%; padding-bottom: 15%; background: transparent url('./img/search-none.png') center center no-repeat;">
+        </div>
+        <div>
+          <h3>
+            No results found for
+            <br/>"
+            <span id="keyword"></span>"
+          </h3>
+          <p>
+            Please make sure your words
+            <br/>are spelled correctly, or use
+            <br/>less or different keywords
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

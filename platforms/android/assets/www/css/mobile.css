@@ -1,0 +1,423 @@
+html, body {
+  /**   font: 12px/15px sans-serif; **/
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+div.outer-container {
+  padding-top: 30px;
+}
+div.inner-container {
+  padding: 10px;
+}
+/* Smartphone Portrait */
+ @media only screen and (max-width: 320px) {
+  #indexPage {
+    background: url("../img/bg-iphone.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #tourPage {
+    background: url("../img/bg-iphone-tour.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+/* iPad Portrait */
+ @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #indexPage {
+    background: url("../img/bg-ipad.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #tourPage {
+    background: url("../img/bg-ipad-tour.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+.ui-btn {
+  margin: 0.7em 0;
+}
+.ui-btn-inner {
+  font-size: 18px;
+  font-weight: bold;
+}
+.ui-btn-up-btn, .ui-btn-hover-btn {
+  /* Fallback for web browsers that don't support RGBa */
+  background-color: rgb(255, 255, 255);
+  /* RGBa with 0.6 opacity */
+  background-color: rgba(255, 255, 255, 0.9);
+  /* For IE 5.5 - 7*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99FFFFFF, endColorstr=#99FFFFFF);
+  /* For IE 8*/
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#99FFFFFF, endColorstr=#99FFFFFF)";
+}
+.ui-btn-down-btn {
+  border: 1px solid #225377;
+  background: #4e89c5;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 1px 1px #194b7e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#295b8e), to(#3e79b5));
+  /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(#295b8e, #3e79b5);
+  /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(#295b8e, #3e79b5);
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(#295b8e, #3e79b5);
+  /* IE10 */
+  background-image: -o-linear-gradient(#295b8e, #3e79b5);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(#295b8e, #3e79b5);
+}
+.ui-btn-up-btnmain, .ui-btn-hover-btnmain {
+  border: none;
+  color: white;
+  background-color: rgb(78, 137, 197);
+  background-color: rgba(78, 137, 197, 0.9);
+  /* For IE 5.5 - 7*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#994e89c5, endColorstr=#994e89c5);
+  /* For IE 8*/
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#994e89c5, endColorstr=#994e89c5)";
+  text-shadow: 0 1px 1px #194b7e;
+}
+.ui-btn-down-btnmain {
+  border: none;
+  color: white;
+  background-color: rgb(78, 137, 197);
+  background-color: rgba(78, 137, 197, 0.9);
+  /* For IE 5.5 - 7*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#994e89c5, endColorstr=#994e89c5);
+  /* For IE 8*/
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#994e89c5, endColorstr=#994e89c5)";
+  text-shadow: 0 1px 1px #194b7e;
+}
+/*
+
+.ui-loader { 
+    top: 60%; 
+}
+*/
+ .ui-icon-tick {
+  background-image: url("../img/tick.png");
+}
+.ui-icon-settings {
+  background-image: url("../img/icon-settings.png");
+}
+.ui-icon-recommend {
+  background-image: url("../img/icon-recommend.png");
+  background-position: 1px 2px;
+}
+.ui-icon-packages {
+  background-image: url("../img/icon-packages.png");
+  background-position: 2px 2px;
+}
+.ui-icon-payment {
+  background-image: url("../img/icon-payment.png");
+  background-position: 0px 0px;
+}
+.btn-more {
+  text-align: center;
+  font-weight: normal;
+}
+#header {
+  padding-top: 30px;
+  width: 100%;
+  height: 35px;
+}
+#back-button-outer {
+  float: left;
+  width: 16%;
+  height: 24px;
+  margin-top: -10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#back-button {
+  float: left;
+  width: 100%;
+  height: 100%;
+  margin-top: -10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  position: relative;
+}
+.back-button-normal {
+  background-image: url("../img/back.png");
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  background-size: 36px 36px;
+}
+#back-button:active {
+  opacity: 0.7;
+  -webkit-transition:opacity .15s linear;
+  -moz-transition:opacity .15s linear;
+  -ms-transition:opacity .15s linear;
+  -o-transition:opacity .15s linear;
+  transition:opacity .15s linear;
+}
+.back-button-hover {
+  opacity: 0.7;
+  -webkit-transition:opacity .15s linear;
+  -moz-transition:opacity .15s linear;
+  -ms-transition:opacity .15s linear;
+  -o-transition:opacity .15s linear;
+  transition:opacity .15s linear;
+}
+#page-title {
+  float: left;
+  width: 68%;
+  text-align: center;
+  padding-top: 2px;
+}
+#help-outer {
+  float: left;
+  width: 16%;
+  height: 24px;
+  margin-top: -10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 13px;
+}
+#help-outer:active {
+  opacity: 0.7;
+  -webkit-transition:opacity .15s linear;
+  -moz-transition:opacity .15s linear;
+  -ms-transition:opacity .15s linear;
+  -o-transition:opacity .15s linear;
+  transition:opacity .15s linear;
+}
+#help-button {
+  float: left;
+  width: 100%;
+  height: 100%;
+  margin-top: -10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  position: relative;
+  background-image: url("../img/help.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 30px 30px;
+}
+#login-fb {
+  display: block;
+  background: transparent url("../img/fb-log-in-active.png") center top no-repeat;
+  width: 100%;
+  height: 65px;
+}
+#login-fb:hover {
+  background: transparent url("../img/fb-log-in-pressed.png") center top no-repeat;
+}
+input[type="text"], input[type="password"], textarea {
+  padding: 10px;
+  padding-left: 35px;
+}
+input.ui-corner-all, textarea.ui-corner-all {
+  border-radius: 0 !important;
+}
+#name {
+  background: white url("../img/icon-name.png") 10px center no-repeat;
+}
+#email {
+  background: white url("../img/icon-email.png") 10px center no-repeat;
+}
+#password {
+  background: white url("../img/icon-password.png") 10px center no-repeat;
+}
+#job-title {
+  background: white url("../img/icon-job.png") 10px center no-repeat;
+}
+#mobile-number {
+  background: white url("../img/icon-phone.png") 10px center no-repeat;
+}
+#service-area {
+  background: white url("../img/icon-area.png") 10px center no-repeat;
+}
+#headline {
+  background: white url("../img/icon-headline.png") 10px center no-repeat;
+}
+#company {
+  background: white url("../img/icon-company.png") 10px center no-repeat;
+}
+#specialties {
+  background: white url("../img/icon-specialties.png") 10px center no-repeat;
+}
+#qualification {
+  background: white url("../img/icon-qualifications.png") 10px center no-repeat;
+}
+#copy {
+  background: white url("../img/icon-copy.png") 10px center no-repeat;
+}
+#username {
+  background: white url("../img/icon-username.png") 10px center no-repeat;
+}
+#editPasswordView input, #editUsernameView input, #editProfileMoreView input {
+  padding-left: 10px;
+}
+#planView li:not(:first-child), #clientView li:not(:first-child), #providerView li:not(:first-child), #sellerMoreView li:not(:first-child) {
+  font-size: 14px;
+  line-height: 23px;
+}
+#packageView li:not(:first-child), #packageViewAdmin li:not(:first-child) {
+  font-size: 14px;
+  line-height: 14px;
+}
+.listView li, a {
+  font-size: 14px;
+  line-height: 23px;
+}
+.ta-center {
+  text-align: center;
+}
+.ta-left {
+  text-align: left;
+}
+.bg-white {
+  background-color: #fff;
+}
+.bold {
+  font-weight: bold;
+}
+.smaller {
+  font-size: 14px;
+  line-height: 23px;
+}
+span.desc, li.desc, p.desc {
+  color: #7c7f85;
+}
+span.desc-small, div.desc-small {
+  color: #7c7f85;
+  font-size: 13px;
+}
+span.pull-right, div.pull-right {
+  float: right;
+}
+span.payment-paid {
+  padding-right: 15px;
+}
+.payment-dollar {
+  background-color: #222;
+  color: #FFF;
+  padding: 8px 0px 8px 5px;
+  font-weight: normal;
+}
+.remove-ellipsis {
+  overflow: visible;
+  white-space: normal;
+}
+.page-content {
+  /*    background-color: #22272A; */
+}
+.share-icon {
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+}
+.edit-package {
+  padding: 20px;
+  width: 35px;
+  height: 35px;
+}
+.ui-badge-container {
+  position: relative;
+}
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  padding-top: 12%;
+  padding-bottom: 10%;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.swipe-wrap h3 {
+  color: #08c;
+  padding: 5px;
+}
+.swipe-wrap p {
+  font-size: 14px;
+  padding: 10px;
+  display: block;
+  text-align: left;
+  margin: auto;
+  width: 260px;
+  padding-bottom: 70%;
+}
+.swipe-wrap img {
+  width: 280px;
+}
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.dots {
+  width: 100%;
+  top: 80px;
+  height: 11px;
+  display: block;
+  position: absolute;
+  text-align: center;
+}
+.dots .dot {
+  top: -5px;
+  width: 11px;
+  height: 11px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 100%;
+  display: inline-block;
+}
+.dot-normal {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.dot-active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.package-alert {
+  color: #11772D;
+  font-weight: bold;
+}
+.ui-slider-switch {
+  width: 12em !important;
+}
+#intro {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  width: 260px;
+  padding: 10px;
+  font-size: 14px;
+  /* Fallback for web browsers that don't support RGBa */
+  background-color: rgb(255, 255, 255);
+  /* RGBa with 0.6 opacity */
+  background-color: rgba(255, 255, 255, 0.9);
+  /* For IE 5.5 - 7*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#90FFFFFF, endColorstr=#90FFFFFF);
+  /* For IE 8*/
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#90FFFFFF, endColorstr=#90FFFFFF)";
+}
+*:not(input):not(textarea) {
+  -webkit-user-select: none;
+  /* disable selection/Copy of UIWebView */
+  -webkit-touch-callout: none;
+  /* disable the IOS popup when long-press on a link */
+}

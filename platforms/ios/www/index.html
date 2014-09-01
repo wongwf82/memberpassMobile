@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1" />
+  <title></title>
+
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.notification.css" />
+
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/facebook.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+  <script type="text/javascript" src="js/accounting.js"></script>
+  <script type="text/javascript" src="js/swipe.js"></script>
+  <script type="text/javascript" src="js/jquery.notification.js"></script>
+  <script type="text/javascript" src="js/fastclick.js"></script>
+  <script type="text/javascript" src="https://www.memberpass.com/mobile.jquery.inlineedit.js"></script>
+
+  <script type="text/javascript" src="js/pages/application.js"></script>
+
+  <script type="text/javascript" src="js/pages/client_checkin_current.js"></script>
+  <script type="text/javascript" src="js/pages/client_checkin_history.js"></script>
+  <script type="text/javascript" src="js/pages/client_find_seller.js"></script>
+  <script type="text/javascript" src="js/pages/client_recommend.js"></script>
+  <script type="text/javascript" src="js/pages/client_select_package.js"></script>
+  <script type="text/javascript" src="js/pages/client_seller.js"></script>
+  <script type="text/javascript" src="js/pages/client_seller_more.js"></script>
+  <script type="text/javascript" src="js/pages/client_usage.js"></script>
+
+  <script type="text/javascript" src="js/pages/core_about.js"></script>
+  <script type="text/javascript" src="js/pages/core_forgot_password.js"></script>
+  <script type="text/javascript" src="js/pages/core_settings.js"></script>
+
+  <script type="text/javascript" src="js/pages/edit_contact_details.js"></script>
+  <script type="text/javascript" src="js/pages/edit_package.js"></script>
+  <script type="text/javascript" src="js/pages/edit_package_desc.js"></script>
+  <script type="text/javascript" src="js/pages/edit_package_template.js"></script>
+  <script type="text/javascript" src="js/pages/edit_password.js"></script>
+  <!-- <script type="text/javascript" src="js/pages/edit_payment_options.js"></script> -->
+  <script type="text/javascript" src="js/pages/edit_photo.js"></script>
+  <script type="text/javascript" src="js/pages/edit_profile.js"></script>
+  <script type="text/javascript" src="js/pages/edit_profile_more.js"></script>
+  <script type="text/javascript" src="js/pages/edit_username.js"></script>
+
+  <script type="text/javascript" src="js/pages/index.js"></script>
+  <script type="text/javascript" src="js/pages/login.js"></script>
+
+  <script type="text/javascript" src="js/pages/provider_change_plan.js"></script>
+  <script type="text/javascript" src="js/pages/provider_checkin_current.js"></script>
+  <script type="text/javascript" src="js/pages/provider_checkin_history.js"></script>
+  <script type="text/javascript" src="js/pages/provider_packages.js"></script>
+  <script type="text/javascript" src="js/pages/provider_payment.js"></script>
+  <script type="text/javascript" src="js/pages/provider_profile.js"></script>
+  <script type="text/javascript" src="js/pages/provider_promote.js"></script>
+  <script type="text/javascript" src="js/pages/provider_remove_package.js"></script>
+  <script type="text/javascript" src="js/pages/provider_usage.js"></script>
+
+  <script type="text/javascript" src="js/pages/signup.js"></script>
+  <script type="text/javascript" src="js/pages/signup_photo.js"></script>
+  <script type="text/javascript" src="js/pages/signup_provider.js"></script>
+  <script type="text/javascript" src="js/pages/signup_register_as.js"></script>
+
+  <script type="text/javascript" src="js/pages/tour.js"></script>
+  <script type="text/javascript" src="js/pages/tour_client.js"></script>
+  <script type="text/javascript" src="js/pages/tour_provider.js"></script>
+</head>
+
+<body>
+  <div id="fb-root"></div>
+  <div data-role="page" id="indexPage" class="outer-container">
+    <div data-position="fixed">
+      <div class="inner-container">
+        <a onclick="goTo('client_find_seller.html');" data-role="button" data-corners="false" data-theme="btnmain">Find a service provider</a>
+        <a onclick="goTo('client_checkin_current.html');" data-role="button" data-corners="false" data-theme="btnmain" id="client-checkin" style="display:none;">View my providers</a>
+        <a onclick="goTo('provider_checkin_current.html');" data-role="button" data-corners="false" data-theme="btn" id="provider-checkin" style="display:none;">Track client sessions</a>
+        <a onclick="goTo('provider_profile.html');" data-role="button" data-corners="false" data-theme="btn" id="profile-setup" style="display:none;">Profile setup</a>
+        <a onclick="goTo('tour.html',null,'pop');" data-role="button" data-corners="false" data-theme="btn" id="tour">Take the tour</a>
+        <a onclick="goTo('core_settings.html');" data-role="button" data-corners="false" data-theme="btn" id="setting-setup" style="display:none;">Settings</a>
+        <a onclick="goTo('login.html')" data-role="button" data-corners="false" data-theme="btn" id="login">Log in</a>
+        <a onclick="goTo('signup.html')" data-role="button" data-corners="false" data-theme="btn" id="signup">Sign up</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<div data-role="page" id="editPackagePage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer">
+      <div id="back-button" onclick="goBackTo('provider_packages.html');"></div>
+    </div>
+    <div id="page-title">Edit package</div>
+    <div id="help-outer">
+      <div id="help-button" style="display: none;"></div>
+    </div>
+  </div>
+  <div class="page-content" id="page-content">
+    <div data-role="content">
+      <ul id="editPackageList" data-role="listview">
+        <li id="editTemplate">
+          <a onclick="goTo('edit_package_template.html',null,'slideup')">
+            <img src="img/template.png" class="edit-package">
+            <h1 style="padding-top: 10px">Edit template</h1>
+          </a>
+        </li>
+        <li id="editDescription">
+          <a onclick="goTo('edit_package_desc.html',null,'slideup')">
+            <img src="img/description.png" class="edit-package">
+            <h1 style="padding-top: 10px">Edit description</h1>
+          </a>
+        </li>
+      </ul>
+      <br/>
+      <a href="provider_remove_package.html" data-role="button" data-corners="false" data-theme="a" data-rel="dialog" data-transition="pop">Remove this package</a> 
+    </div>
+  </div>
+</div>

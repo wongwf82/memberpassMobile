@@ -1,0 +1,27 @@
+<div data-role="page" id="signupPage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer">
+      <div id="back-button" onclick="goBackHistory();"></div>
+    </div>
+    <div id="page-title">Sign up</div>
+    <div id="help-outer">
+      <div id="help-button" style="display: none;"></div>
+    </div>
+  </div>
+  <div class="page-content" id="page-content">
+    <div data-role="content" style="padding-top: 0px;">
+      <br/>
+      <br/>
+      <a onclick="loginFB();" id="login-fb"></a>
+      <div style="height: 2px; background-color: black; margin: 30px 0px; text-align: center;">
+        <span style="background-color: #F5F5F5; position: relative; top: -0.7em; padding: 0px 10px;">or</span>
+      </div>
+      <form method="POST" id="signup-form">
+        <input type="text" name="name" id="name" placeholder="Name" autocapitalize="off" autocorrect="off" />
+        <input type="text" name="email" id="email" placeholder="Email" autocapitalize="off" autocorrect="off" />
+        <input type="text" name="password" id="password" placeholder="Create a password" autocapitalize="off" autocorrect="off" />
+      </form>
+      <a onclick="signup();" data-role="button" data-corners="false" data-theme="a">Next</a> 
+    </div>
+  </div>
+</div>

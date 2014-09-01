@@ -1,0 +1,17 @@
+<div data-role="page" id="editUsernamePage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer">
+      <div id="help-button" style="display: none;"></div>
+    </div>
+    <div id="page-title">Edit username</div>
+    <div id="help-outer" onclick="goBackHistory();">Cancel</div>
+  </div>
+  <div class="page-content" id="page-content">
+    <div data-role="content" id="editUsernameView" style="padding-top: 0px;">
+      <form method="POST" id="edit-username-form">
+        <input type="text" name="username" id="edit-username" placeholder="Username" autocapitalize="off" autocorrect="off" />
+      </form>
+      <a onclick="editUsername();" data-role="button" data-corners="false" data-theme="a">Done</a> 
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div data-role="page" id="signupRegisterAsPage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer"></div>
+    <div id="page-title">Registering as a</div>
+    <div id="help-outer">
+      <div id="help-button" style="display: none;"></div>
+    </div>
+  </div>
+  <div class="page-content" id="page-content">
+    <div data-role="content" style="padding-top: 0px;" class="ta-center">
+      <form method="POST" id="registeras-form">
+        <fieldset data-role="controlgroup" data-type="horizontal">
+          <input type="radio" name="memberpass_plan" id="service-provider" value="BASIC" checked="checked">
+          <label for="service-provider">Service provider</label>
+          <input type="radio" name="memberpass_plan" id="client" value="client">
+          <label for="client">Client</label>
+        </fieldset>
+        <input type="text" name="mobile_number" id="mobile-number" placeholder="Mobile number" />
+      </form>
+      <br/>
+      <br/>
+      <a onclick="registerAs();" data-role="button" data-corners="false" data-theme="a">Next</a>
+    </div>
+  </div>
+</div>

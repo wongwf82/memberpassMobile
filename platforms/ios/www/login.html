@@ -1,0 +1,35 @@
+<div data-role="page" id="loginPage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer">
+      <div id="back-button" onclick="goBackTo('index.html');"></div>
+    </div>
+    <div id="page-title">Log in</div>
+    <div id="help-outer">
+      <div id="help-button" style="display: none;"></div>
+    </div>
+  </div>
+  <div class="page-content" id="page-content">
+    <div data-role="content" style="padding-top: 0px;">
+      <br/>
+      <br/>
+      <a onclick="loginFB();" id="login-fb"></a>
+      <div style="height: 2px; background-color: black; margin: 30px 0px; text-align: center;">
+        <span style="background-color: #F5F5F5; position: relative; top: -0.7em; padding: 0px 10px;">or</span>
+      </div>
+      <form method="POST" id="login-form">
+        <input type="text" name="email" id="email" placeholder="Email" autocapitalize="off" autocorrect="off" />
+        <input type="password" name="password" id="password" placeholder="Password" autocapitalize="off" autocorrect="off" />
+        <p style="text-align: center; padding: 10px 0px;">
+          <a onclick="goTo('core_forgot_password.html',null,'slideup')" style="text-decoration: none;">
+            Forgot your password?
+          </a>
+        </p>
+      </form>
+      <a onclick="login();" data-role="button" data-corners="false" data-theme="a" id="login">Log in</a>
+      <p style="text-align: center; padding: 7px 0px; font-size: 14px;">
+        Don't have a login?
+        <a onclick="goTo('signup.html')" style="text-decoration: none;">Sign up free</a>
+      </p>
+    </div>
+  </div>
+</div>

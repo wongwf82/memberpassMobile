@@ -1,0 +1,36 @@
+<div data-role="page" id="clientSellerMorePage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer">
+      <div id="back-button" onclick="goBackTo('client_seller.html');"></div>
+    </div>
+    <div id="page-title"></div>
+    <div id="help-outer">
+      <div id="help-button" style="display: none;"></div>
+    </div>
+  </div>
+  <div class="page-content" id="page-content">
+    <div data-role="content" style="padding-top: 0px;">
+      <ul id="sellerMoreView" data-role="listview" data-inset="true"></ul>
+      <div id="seller-more-none" style="padding-top: 30%; text-align: center; color: #6f7477; display: none;">
+        <div style="padding-top: 30%; padding-bottom: 15%; background: transparent url('./img/packages.png') center center no-repeat;">
+        </div>
+        <div>
+          <p>
+            <span id="first-name"></span>has not added additional information yet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a onclick="goTo('client_seller.html',null,'fade')" data-icon="star">Profile</a>
+        </li>
+        <li><a data-icon="info" class="ui-btn-active">More</a>
+        </li>
+        <li><a onclick="goTo('client_recommend.html','client_seller_more.html','slideup')" data-icon="recommend">Recommend</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

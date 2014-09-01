@@ -1,0 +1,34 @@
+<div data-role="page" id="clientCheckinHistoryPage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer">
+      <div id="back-button" onclick="goBackTo('index.html');"></div>
+    </div>
+    <div id="page-title">My sessions - History</div>
+    <div id="help-outer">
+      <div id="help-button" style="display: none;"></div>
+    </div>
+  </div>
+  <div class="page-content" id="page-content">
+    <div data-role="content">
+      <ul id="CheckInListHistory" data-role="listview" data-inset="false" data-corners="false" data-count-theme="a" data-filter-theme="d">
+      </ul>
+      <div id="sessions-none" style="padding-top: 10%; text-align: center; color: #6f7477; display: none;">
+        <div style="padding-top: 30%; padding-bottom: 15%; background: transparent url('./img/packages.png') center center no-repeat;">
+        </div>
+        <div>
+          <h3>No past sessions</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a onclick="goTo('client_checkin_current.html',null,'fade')" data-icon="arrow-u">Current</a>
+        </li>
+        <li><a data-icon="arrow-d" class="ui-btn-active">History</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

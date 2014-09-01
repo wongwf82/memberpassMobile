@@ -1,0 +1,21 @@
+<div data-role="page" id="editProfileMorePage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer"></div>
+    <div id="page-title">More information</div>
+    <div id="help-outer" onclick="goBackHistory();">Cancel</div>
+  </div>
+  <div class="page-content" id="page-content">
+    <div data-role="content" id="editProfileMoreView" style="padding-top: 0px;">
+      <form method="POST" id="edit-profile-more-form">
+        <input type="text" name="job_title" id="edit-job-title" placeholder="Job title" />
+        <input type="text" name="company" id="edit-company" placeholder="Company" />
+        <textarea cols="40" rows="8" name="service_area" id="edit-service-area" placeholder="Service area"></textarea>
+        <textarea cols="40" rows="8" name="headline" id="edit-headline" placeholder="Headline"></textarea>
+        <textarea cols="40" rows="8" name="specialties" id="edit-specialties" placeholder="Specialties"></textarea>
+        <textarea cols="40" rows="8" name="qualifications" id="edit-qualifications" placeholder="Qualification"></textarea>
+      </form>
+      <br/>
+      <a onclick="editProfileMorePage();" data-role="button" data-corners="false" data-theme="a">Done</a> 
+    </div>
+  </div>
+</div>

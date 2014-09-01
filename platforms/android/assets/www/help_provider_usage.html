@@ -1,0 +1,42 @@
+<div data-role="page" id="helpPage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer"></div>
+    <div id="page-title">Swipe left for more</div>
+    <div id="help-outer" onclick="goBackHistory();">Done</div>
+  </div>
+  <div class="page-content" id="page-content">
+    <!-- The number of dots must be the same as the number of div slides -->
+    <li class="dots">
+      <label class="dot dot-normal"></label>
+      <label class="dot dot-normal"></label>
+    </li>
+    <div data-role="content" style="padding-top: 0px;">
+      <div id='slider' class='swipe'>
+        <div class='swipe-wrap'>
+          <div>
+            <h3>Track session usage</h3>
+            <img src="img/help/provider-usage-1.png" />
+            <p>
+              If a client selected a 10 session package from you, click on <b>Check in</b> to reduce it to 9.
+              <br/>
+              <br/>At each session, use this feature to track your client's session usage.
+              <br/>
+              <br/>Click on <b>Gift one</b> to increase it back to 10!
+            </p>
+          </div>
+          <div>
+            <h3>Track payment status</h3>
+            <img src="img/help/provider-usage-2.png" />
+            <p>
+              When a client selects a package, it is first set to <b>Unpaid</b>.
+              <br/>
+              <br/>Change to <b>Paid</b> when you receive cash payment.
+              <br/>
+              <br/>When there are no sessions left in a package, the package will be moved to History. You can also manually move a client's package to History at any time by clicking on <b>Remove</b>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

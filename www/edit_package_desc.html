@@ -1,0 +1,17 @@
+<div data-role="page" id="editPackageDescPage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer">
+      <div id="help-button" style="display: none;"></div>
+    </div>
+    <div id="page-title">Editable description</div>
+    <div id="help-outer" onclick="goBackHistory();">Cancel</div>
+  </div>
+  <div class="page-content" id="page-content">
+    <div data-role="content">
+      <form method="POST" id="edit-package-desc-form">
+        <textarea cols="40" rows="8" name="package-desc" id="package-desc"></textarea>
+      </form>
+      <a onclick="editPackageDesc();" data-role="button" data-corners="false" data-theme="a">Done</a>
+    </div>
+  </div>
+</div>

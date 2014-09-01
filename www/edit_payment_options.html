@@ -1,0 +1,42 @@
+<div data-role="page" id="editPaymentOptionsPage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer"></div>
+    <div id="page-title">Edit payment options</div>
+    <div id="help-outer" onclick="goBackHistory();">Cancel</div>
+  </div>
+  <div class="page-content" id="page-content">
+    <div data-role="content" style="padding-top: 0px;">
+      <form method="POST" id="edit-package-desc-form">
+        <div data-role="fieldcontain">
+          <label for="fullPayment"><b>Full payment - discounted price</b>
+          </label>
+          <span class="payment-dollar">$</span>
+          <input type="range" name="fullPayment" id="fullPayment" value="550" min="0" max="5000" data-theme="a" data-track-theme="b" style="border-left-color: #222; width: 40px;" />
+        </div>
+        <div data-role="fieldcontain" style="padding-bottom: 20px;">
+          <label for="weeklyprice"><b>Subscription - weekly price</b>
+          </label>
+          <span class="payment-dollar">$</span>
+          <input type="range" name="weeklyprice" id="weeklyprice" value="50" min="0" max="500" data-theme="a" data-track-theme="b" style="border-left-color: #222; width: 40px; margin-bottom: 5px;" />
+          <span class="desc-small pull-right payment-paid">Fully paid in 12 weeks</span>
+        </div>
+        <div data-role="fieldcontain" style="padding-bottom: 20px;">
+          <label for="slider-3"><b>Subscription - fortnightly price</b>
+          </label>
+          <span class="payment-dollar">$</span>
+          <input type="range" name="slider-3" id="slider-3" value="150" min="0" max="1000" data-theme="a" data-track-theme="b" style="border-left-color: #222; width: 40px; margin-bottom: 5px;" />
+          <span class="desc-small pull-right payment-paid">Fully paid in 8 weeks</span>
+        </div>
+        <div data-role="fieldcontain" style="padding-bottom: 20px;">
+          <label for="slider-3"><b>Subscription - monthly price</b>
+          </label>
+          <span class="payment-dollar">$</span>
+          <input type="range" name="slider-3" id="slider-3" value="300" min="0" max="1000" data-theme="a" data-track-theme="b" style="border-left-color: #222; width: 40px; margin-bottom: 5px;" />
+          <span class="desc-small pull-right payment-paid">Fully paid in 2 months</span>
+        </div>
+        <input type="hidden" name="providerplan_id" id="providerplan_id" />
+      </form>
+      <a onclick="editPackageDesc();" data-role="button" data-corners="false" data-theme="a">Done</a>
+    </div>
+  </div>
+</div>

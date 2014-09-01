@@ -1,0 +1,19 @@
+<div data-role="page" id="editContactDetailsPage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer">
+      <div id="help-button" style="display: none;"></div>
+    </div>
+    <div id="page-title">Contact details</div>
+    <div id="help-outer" onclick="goBackHistory();">Cancel</div>
+  </div>
+  <div class="page-content" id="page-content">
+    <div data-role="content" id="editContactDetails" style="padding-top: 0px;">
+      <form method="POST" id="edit-contact-details-form">
+        <input type="text" name="name" id="name" placeholder="Name" autocorrect="off" />
+        <input type="text" name="email" id="email" placeholder="Email" autocapitalize="off" autocorrect="off" />
+        <input type="text" name="mobile_number" id="mobile-number" placeholder="Mobile" />
+      </form>
+      <a onclick="editContactDetails();" data-role="button" data-corners="false" data-theme="a">Done</a> 
+    </div>
+  </div>
+</div>

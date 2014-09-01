@@ -1,0 +1,21 @@
+<div data-role="page" id="photoPage">
+  <div data-role="header" data-theme="b" id="header">
+    <div id="back-button-outer"></div>
+    <div id="page-title">Add profile picture</div>
+    <div id="help-outer">
+      <div id="help-button" style="display: none;"></div>
+    </div>
+  </div>
+  <div class="page-content" id="page-content">
+    <div data-role="content" style="padding-top: 0px;">
+      <a onclick="capturePhotoEdit();" data-role="button" data-corners="false" data-theme="btn">Take photo</a>
+      <a onclick="getPhoto(PICTURE_SOURCE.PHOTOLIBRARY);" data-role="button" data-corners="false" data-theme="btn">
+        Choose from library
+      </a>
+      <br>
+      <a onclick="photo();" data-role="button" data-corners="false" data-theme="a">Next</a> 
+      <img style="display:none; width:290px; height:290px;" id="smallImage" src="" />
+      <img style="display:none;" id="largeImage" src="" />
+    </div>
+  </div>
+</div>
